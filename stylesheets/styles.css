@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffff;
+    height: 100vh;
+}
+
+.encabezadoContainer{
+    margin: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.encabezadoContainer img{
+    width: 30%;
+    height: 200px;
+    border-radius: 100%;
+}
+
+
+.btn-danger{
+    background-color: #c11c23;
+}
+
+.idImg{
+    height: 231px;
+    width: 230px;
+    border-radius: 100%;
+    box-shadow: -1px -1px 5px 12px #95868633;
+    border: 13px solid #c9c9c9d6;
+    filter: brightness(0.9);
+}
+
+.division {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 388px;
+    flex-wrap: wrap;
+    word-break: break-word;
+}
+
+.aboutImg{
+    height: 231px;
+    width: 372px;
+}
+
+.aboutText{
+    align-items: baseline;
+    text-align: baseline;
+    flex-wrap: wrap;
+}
+
+.portfolio{
+    background-color: rgb(41, 41, 41);
+}
+
+
+.portfolio h2{
+    text-align: center;
+    color: white;
+}
+
+.tituloPortfolio{
+    border-bottom: 1px solid;
+    border-color: white;
+    width: 200px;
+    margin: 0px auto;
+    padding-top: 15px;
+}
+
+.centered{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achicarImagen{
+    max-width: 65%;
+    margin: 20px;
+}
+
+.card{
+    border-radius: 30px;
+}
+
+.card img{
+    border-radius: 30px;
+    -webkit-box-shadow: -1px 1px 8px 8px rgba(255,255,255,0.19);
+    filter: brightness(0.2);
+}
+
+.textoInsideImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card img:hover{
+    transform: scale(1.3);
+    -webkit-transition: all .5s ease-in-out;
+    filter: brightness(1);
+}
+
+/* mini celu */
+@media (max-width: 300px){
+    .division{
+        height: 223px;
+    }
+
+    .aboutText {
+        align-items: center;
+        text-align: center;
+    }
+
+    .idImg{
+        height: 137px !important;
+        width: 137px !important;
+    }
+
+    .aboutImg{
+        height: 140px;
+        width: 132px;
+    }
+
+    .achicarImagen{
+        max-width: 90%;
+    }
+}
+
+/* celulares */
+@media (min-width: 301px) and (max-width:575px ){
+
+    .division{    
+        height: 279px;
+    }
+
+    .aboutImg{
+        width: 281px;
+    }
+
+    .aboutText {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* tablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .division{
+        height: 280px;
+    }
+
+    .aboutText {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* notebook */
+@media (min-width: 768px) and (max-width:990px ){
+   .division{
+     height: 256px;
+   }
+
+   .aboutText {
+    align-items: center;
+    text-align: center;
+}
+}
+
+
+/* escritorio */
+@media (min-width: 991px){
+    .encabezado{
+        margin-top: 20px;
+    }
+
+    .division {
+        height: 290px;
+    }
+    
+    .idImg{
+        height: 210px;
+        width: 214px;
+    }
+
+    .aboutText{
+        align-items: center !important;
+        text-align: center;
+        flex-wrap: nowrap !important;
+        padding: 40px;
+        margin-top: 40px;
+    }
+    
+}
