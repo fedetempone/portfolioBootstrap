@@ -112,6 +112,17 @@ body{
     filter: brightness(1);
 }
 
+.iconos a{
+    text-decoration: none;
+    color: white;
+    background: #c11c23;
+    width: 30px;
+    height: 30px;
+    line-height: 30px !important;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+
 /* mini celu */
 @media (max-width: 300px){
     .division{
@@ -201,6 +212,10 @@ body{
         flex-wrap: nowrap !important;
         padding: 40px;
         margin-top: 40px;
+    }
+
+    .iconos a:hover{
+        transform: scale(1.2);
     }
     
 }
